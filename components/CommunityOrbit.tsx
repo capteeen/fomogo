@@ -2,15 +2,22 @@ import type { CSSProperties } from "react";
 import Link from "next/link";
 
 const avatars = [
-  { src: "/orbit/01_pointfarmcap.jpg", handle: "@pointfarmcap", size: 78, radius: 1 },
-  { src: "/orbit/02_The__Solstice.jpg", handle: "@The__Solstice", size: 46, radius: 1 },
-  { src: "/orbit/03_theveeman.jpg", handle: "@theveeman", size: 38, radius: 1 },
-  { src: "/orbit/04_0xdetweiler.jpg", handle: "@0xdetweiler", size: 62, radius: 1 },
-  { src: "/orbit/05_Pasterniq.jpg", handle: "@Pasterniq", size: 42, radius: 1 },
-  { src: "/orbit/06_OhMyJack.jpg", handle: "@OhMyJack", size: 54, radius: 1 },
-  { src: "/orbit/07_TheOnlyOMP.jpg", handle: "@TheOnlyOMP", size: 34, radius: 1 },
-  { src: "/orbit/08_BonkGay.jpg", handle: "@BonkGay", size: 50, radius: 1 },
-  { src: "/orbit/10_Pyro.png", handle: "@Pyro", size: 68, radius: 1 },
+  { src: "/avatars/pointfarmcap.jpg", handle: "@pointfarmcap", size: 72, radius: 1 },
+  { src: "/avatars/DongBnb.jpg", handle: "@DongBnb", size: 42, radius: 1 },
+  { src: "/avatars/The__Solstice.jpg", handle: "@The__Solstice", size: 48, radius: 1 },
+  { src: "/avatars/0xace_eth.jpg", handle: "@0xace_eth", size: 38, radius: 1 },
+  { src: "/avatars/AustinWhite.jpg", handle: "@AustinWhite", size: 54, radius: 1 },
+  { src: "/avatars/needbigwinnow.jpg", handle: "@needbigwinnow", size: 36, radius: 1 },
+  { src: "/avatars/theveeman.jpg", handle: "@theveeman", size: 44, radius: 1 },
+  { src: "/avatars/onchaincutie.jpg", handle: "@onchaincutie", size: 40, radius: 1 },
+  { src: "/avatars/0xdetweiler.jpg", handle: "@0xdetweiler", size: 60, radius: 1 },
+  { src: "/avatars/Pasterniq.jpg", handle: "@Pasterniq", size: 38, radius: 1 },
+  { src: "/avatars/OhMyJack.jpg", handle: "@OhMyJack", size: 50, radius: 1 },
+  { src: "/avatars/_realgabe.jpg", handle: "@_realgabe", size: 36, radius: 1 },
+  { src: "/avatars/BonkGay.jpg", handle: "@BonkGay", size: 46, radius: 1 },
+  { src: "/avatars/macdegods.jpg", handle: "@macdegods", size: 40, radius: 1 },
+  { src: "/avatars/Pyro.png", handle: "@Pyro", size: 64, radius: 1 },
+  { src: "/avatars/Enzoferrari_eth.jpg", handle: "@Enzoferrari_eth", size: 38, radius: 1 },
 ];
 
 export function CommunityOrbit() {

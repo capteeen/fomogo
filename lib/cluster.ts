@@ -9,5 +9,9 @@ export function clusterName(): Cluster {
 }
 
 export function clusterRpc(): string {
-  return process.env.NEXT_PUBLIC_SOLANA_RPC ?? clusterApiUrl(clusterName());
+  const rpc = process.env.NEXT_PUBLIC_SOLANA_RPC?.trim();
+  if (rpc && (rpc.startsWith("http:") || rpc.startsWith("https:"))) {
+    return rpc;
+  }
+  return clusterApiUrl(clusterName());
 }
