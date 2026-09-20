@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+.venv
+.cache
+.env
+.env.local
+*.log
+*.tsbuildinfo
+data/*.json
+!data/.gitkeep
+public/metadata
+.DS_Store

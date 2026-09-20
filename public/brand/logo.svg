@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="FOMOGO">
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#glow)" fill="#EAEDFF">
+    <path fill-rule="evenodd" d="M92 18c38 0 58 20 68 36 10-16 30-36 68-36 52 0 84 36 84 72s-32 72-84 72c-38 0-58-20-68-36-10 16-30 36-68 36C40 162 8 126 8 90S40 18 92 18zm0 36c-32 0-48 22-48 36s16 36 48 36c20 0 34-12 48-36-14-24-28-36-48-36zm136 0c-20 0-34 12-48 36 14 24 28 36 48 36 32 0 48-22 48-36s-16-36-48-36zM78 78c12 0 22 4 30 14-6 2-12 3-22 3H70c-8 0-12-1-14-4-2-2-2-5-2-7 0-4 6-6 24-6z"/>
+  </g>
+</svg>
