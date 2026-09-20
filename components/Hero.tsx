@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DEMO_STATS } from "@/lib/demo";
 
 export function Hero() {
   return (
@@ -59,9 +60,9 @@ export function Hero() {
           </Link>
         </div>
         <p className="mt-8 text-[13px] text-[#D1D8FF80] md:text-[15px]">
-          <span className="font-bold text-ink">$0.00</span> fees routed ·{" "}
-          <span className="font-bold text-ink">0</span> tokens launched ·{" "}
-          <span className="font-bold text-ink">0</span> handles
+          <span className="font-bold text-ink">${DEMO_STATS.fees.toFixed(2)}</span> fees routed ·{" "}
+          <span className="font-bold text-ink">{DEMO_STATS.tokens}</span> tokens launched ·{" "}
+          <span className="font-bold text-ink">{DEMO_STATS.handles}</span> handles
         </p>
       </div>
       <div className="hero-veil" aria-hidden />

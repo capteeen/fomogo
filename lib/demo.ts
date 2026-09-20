@@ -146,6 +146,12 @@ export const DEMO_LEADERBOARD: LeaderboardRow[] = DEMO_PROFILES.map((profile, in
   .sort((a, b) => parseFloat(b.fees) - parseFloat(a.fees))
   .map((row, index) => ({ ...row, rank: index + 1 }));
 
+export const DEMO_STATS = {
+  fees: DEMO_LEADERBOARD.reduce((sum, row) => sum + parseFloat(row.fees), 0),
+  tokens: DEMO_LEADERBOARD.reduce((sum, row) => sum + row.tokens, 0),
+  handles: DEMO_PROFILES.length,
+};
+
 const ALERT_ICONS = ["/features/icon-fomogo.svg", "/features/token-hands.svg", "/features/token-orbit.svg"];
 
 export function makeAlert(seed: number): AlertItem {
